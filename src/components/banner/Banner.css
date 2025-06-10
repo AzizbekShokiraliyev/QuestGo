@@ -96,12 +96,9 @@
 }
 
 @media (max-width: 768px) {
-	.star-btn {
-		padding: 8px 16px;
-		font-size: 13px;
-	}
 	.small-btn {
-		padding: 8px 20px;
+		padding: 8px 18px;
 		font-size: 15px;
+		margin-bottom: 10px;
 	}
 }

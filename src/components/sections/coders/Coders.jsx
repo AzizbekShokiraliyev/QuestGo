@@ -53,7 +53,7 @@ const Coders = () => {
 	return (
 		<section className='max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 rounded-xl'>
 			<motion.h2
-				className='text-3xl sm:text-4xl font-bold text-center text-[#FACC15] mb-4 sm:mb-10 tracking-wide select-none'
+				className='text-3xl sm:text-4xl font-bold text-center text-[#fff] mb-4 sm:mb-10 tracking-wide select-none'
 				initial={{ opacity: 0, y: -30 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ once: true }}
@@ -78,7 +78,7 @@ const Coders = () => {
 							coder.order === 'reversed' ? 'md:flex-row-reverse' : 'md:flex-row'
 						} bg-gradient-to-br from-[#1E1E1E] to-[#141414] border border-[#27272A] rounded-2xl p-6 sm:p-10 gap-6 sm:gap-10 shadow-lg cursor-default select-text`}
 					>
-						<div className='w-full max-w-full sm:max-w-[400px] overflow-hidden rounded-xl border-2 border-[#27272A] shadow-lg'>
+						<div className='w-full max-w-full sm:max-w-[400px] overflow-hidden rounded-xl border-2 border-[#fff] shadow-lg'>
 							<img
 								src={coder.image}
 								alt={coder.name}
@@ -89,22 +89,20 @@ const Coders = () => {
 						</div>
 
 						<div className='flex flex-col justify-center w-full text-white space-y-4 sm:space-y-6'>
-							<h3 className='text-2xl sm:text-3xl md:text-4xl font-bold text-[#FACC15] min-h-[48px]'>
+							<h3 className='text-2xl sm:text-3xl md:text-4xl font-bold text-white min-h-[96px] whitespace-pre-line'>
 								<Typewriter
-									words={[coder.name, coder.role]}
-									loop={true}
+									words={[`${coder.name}\n${coder.role}`]}
+									loop={0}
 									cursor
 									cursorStyle='|'
 									typeSpeed={50}
-									deleteSpeed={30}
-									delaySpeed={1000}
+									deleteSpeed={0}
+									delaySpeed={1000000}
 								/>
 							</h3>
-
 							<p className='text-xl sm:text-base text-xl text-gray-300 leading-relaxed'>
 								{coder.desc}
 							</p>
-
 							<div className='flex gap-5 text-xl sm:text-2xl mt-2'>
 								{coder.links.github && (
 									<a

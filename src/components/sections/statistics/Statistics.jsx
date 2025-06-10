@@ -33,8 +33,8 @@ const cardVariants = {
 
 const Statistics = () => {
 	return (
-		<div className='h-[100%] bg-gradient-to-b bg-[#18181B] py-16 px-4 text-white'>
-			<h1 className='text-4xl md:text-5xl font-bold text-center text-[#FACC15] mb-12'>
+		<div className='h-[100%] bg-gradient-to-b bg-[#18181B] py-6 px-4 text-white'>
+			<h1 className='text-4xl md:text-5xl font-bold text-center text-[#fff] mb-12'>
 				Statistika
 			</h1>
 
@@ -51,7 +51,7 @@ const Statistics = () => {
 						<div>{stat.icon}</div>
 						<div className='text-center'>
 							<p className='text-xl font-medium text-[#A1A1AA]'>{stat.title}</p>
-							<p className='text-3xl font-bold text-[#FACC15] mt-1'>
+							<p className='text-3xl font-bold text-[#fff] mt-1'>
 								{stat.value.toLocaleString()}
 							</p>
 						</div>

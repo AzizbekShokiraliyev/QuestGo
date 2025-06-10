@@ -41,9 +41,9 @@ const Requirement = () => {
 
 		const botToken = 'YOUR_BOT_TOKEN'
 		const chatId = 'YOUR_CHAT_ID'
-		const text = `📥 Yangi talab!\n\n👤 Ism: ${form.name}\n📞 Tel: ${
+		const text = `📥 Yangi talab!\n\n👤 Ism: ${form.name}\n Tel: ${
 			form.phone || 'yo‘q'
-		}\n📝 Xabar:\n${form.message}`
+		}\n Xabar:\n${form.message}`
 
 		try {
 			await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -69,7 +69,7 @@ const Requirement = () => {
 				animate={{ opacity: 1, y: 0 }}
 				className='w-full max-w-xl bg-[#1f1f1f]/70 backdrop-blur-xl border border-[#333] rounded-2xl shadow-xl p-8 space-y-6'
 			>
-				<h2 className='text-3xl font-bold text-yellow-400 text-center'>
+				<h2 className='text-3xl font-bold text-white-400 text-center'>
 					📬 Talab yuborish
 				</h2>
 
@@ -104,7 +104,7 @@ const Requirement = () => {
 				<motion.button
 					whileTap={{ scale: 0.97 }}
 					type='submit'
-					className='w-full py-3 rounded-lg bg-yellow-400 text-black font-bold text-lg hover:bg-yellow-300 transition flex items-center justify-center gap-2 shadow-md'
+					className='w-full py-3 rounded-lg bg-white text-black font-bold text-lg transition transform hover:scale-105 flex items-center justify-center gap-2 shadow-md'
 				>
 					<FaTelegramPlane /> Yuborish
 				</motion.button>

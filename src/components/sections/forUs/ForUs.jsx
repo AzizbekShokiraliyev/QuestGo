@@ -15,18 +15,18 @@ const ForUs = () => {
 	return (
 		<div className='bg-[#000] w-full p-3 rounded-xl border-4 border-[#27272A] mt-2 pt-5 h-full text-white mb-1'>
 			<div className='text-center mb-8 px-2'>
-				<h1 className='text-3xl sm:text-4xl font-bold text-[#FACC15] mb-3'>
+				<h1 className='text-3xl sm:text-4xl font-bold text-[#fff] mb-3'>
 					Sayt foydali bo‘ldimi?
 				</h1>
-				<p className='text-[#d4d4d8] text-base leading-relaxed max-w-lg mx-auto'>
+				<p className='text-[#d4d4d8] text-base leading-relaxed max-w-lg mx-auto pt-5'>
 					Agar loyihamiz sizga yordam bergan bo‘lsa, bizni bir chashka kofe
-					bilan quvontiring. Sizning e’tiboringiz — eng katta mukofot 💛
+					bilan quvontiring. Sizning e’tiboringiz — eng katta mukofot
 				</p>
 			</div>
 
 			<div className='bg-[#18181B] w-full max-w-[600px] p-4 sm:p-6 mt-20 rounded-xl shadow-inner border border-[#3f3f46] mx-auto'>
 				<div className='flex items-center justify-center mb-4'>
-					<CiCoffeeCup className='text-5xl sm:text-6xl text-[#FACC15]' />
+					<CiCoffeeCup className='text-5xl sm:text-6xl h-[45px] w-[45px] text-[#fff]' />
 				</div>
 				<h2 className='text-center text-[#A1A1AA] text-xl sm:text-2xl font-semibold mb-3'>
 					Karta raqami:

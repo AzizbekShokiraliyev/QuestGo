@@ -19,7 +19,7 @@ const Star = () => (
 
 const Banner = () => {
 	return (
-		<div className='banner bg-[#000] w-full p-4 md:p-6 rounded-xl border-4 border-[#27272A] mt-2 text-white h-[500px] flex flex-col justify-between'>
+		<div className='banner bg-[#000] w-full p-4 md:p-6 rounded-xl border-4 border-[#27272A] mt-2 text-white h-[520px] flex flex-col justify-between'>
 			<div>
 				<h2 className='text-2xl font-semibold'>
 					QuestGo – Bilim sari eng qisqa yo‘l!

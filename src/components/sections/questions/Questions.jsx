@@ -62,9 +62,9 @@ const Card = ({ tech, index }) => (
 )
 
 const Section = ({ title, data }) => (
-	<section className='mb-16'>
-		<h2 className='text-3xl font-bold mb-6 px-4 flex items-center gap-2 text-[#FACC15]'>
-			{title} <FaAngleRight className='text-[#FACC15]' />
+	<section className='mb-10 pb-6'>
+		<h2 className='text-4xl font-bold mb-6 px-4 flex items-center gap-2 text-[#fff]'>
+			{title} <FaAngleRight className='text-[#fff]' />
 		</h2>
 		<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4'>
 			{data.map((tech, index) => (
@@ -75,7 +75,7 @@ const Section = ({ title, data }) => (
 )
 
 const Question = () => (
-	<div className='bg-gradient-to-b from-[#111] to-[#1f1f1f] py-12 text-white min-h-screen'>
+	<div className='bg-gradient-to-b py-12 text-white min-h-screen'>
 		<Section title='Frontend Texnologiyalar' data={frontend} />
 		<Section title='Backend Texnologiyalar' data={backend} />
 	</div>
