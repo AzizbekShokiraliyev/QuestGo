@@ -1,0 +1,20 @@
+/* make sure padding included in width */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		/* Translate by half width to scroll exactly one set */
+		transform: translateX(-50%);
+	}
+}
+
+.animate-scroll-left {
+	animation: scroll-left 60s linear infinite;
+}
